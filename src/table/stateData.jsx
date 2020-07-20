@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import "./table.css";
 import { Table } from "./table";
 
-const Orders = ({ data }) => {
+const StateData = ({ data }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const rowData = React.useMemo(() => data, [data]);
 	const columns = React.useMemo(
@@ -194,4 +194,4 @@ const Orders = ({ data }) => {
 	);
 };
 
-export default Orders;
+export default StateData;

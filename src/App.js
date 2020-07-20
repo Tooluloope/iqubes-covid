@@ -5,7 +5,7 @@ import { getDataError, getData, getDataPending } from "./redux/reducers";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Loader } from "./loader/loader";
-import Orders from "./orders/stateData";
+import StateData from "./table/stateData";
 
 function App({ data, error, pending, fetchData }) {
 	useEffect(() => {
@@ -84,7 +84,7 @@ function App({ data, error, pending, fetchData }) {
 				</div>
 			</div>
 
-			<Orders data={data.states} />
+			<StateData data={data.states} />
 		</div>
 	);
 }
